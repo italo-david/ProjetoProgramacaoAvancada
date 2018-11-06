@@ -1,0 +1,50 @@
+import org.apache.commons.io.FileUtils;
+
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+public class In {
+	 
+	public static void main(String[] args) throws IOException {
+
+	        URL url = new URL("https://www.google.com.br/search?q=one+piece&source=lnms&tbm"
+	        		+ "=isch&sa=X&ved=0ahUKEwja0MeT_5zeAhWDf5A"
+	        		+ "KHfI9CI4Q_AUIDygC&biw=1600&bih=740#imgrc=KEdmZfoFTbn4nM:");
+	        
+	        File file = new File("C:\\Users\\vitor.nobre\\Downloads\\arquivo-baixado.png");
+
+	        FileUtils.copyURLToFile(url, file);
+	      //  URL url = new URL("http://www.android.com/");
+	        HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
+	        try {
+	          InputStream in = new BufferedInputStream(urlConnection.getInputStream());
+	         // readStream(in);
+	        } finally {
+	          urlConnection.disconnect();
+	        }
+	      
+	    }
+
+}
+/*<div class="irc_mimg irc_hic" style="">
+ * <a class="irc_mil i3597" rel="noopener"
+jsaction="mousedown:irc.rl;focus:irc.rl" data-noload="" target="_blank" tabindex="0" 
+data-ved="2ahUKEwjoloSX_5zeAhUCkZAKHX_XB9MQjRx6BAgBEAU" href="/url?sa=i&amp;source=images&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwjoloSX_5zeAhUCkZ"
+		+ "AKHX_XB9MQjRx6BAgBEAU&amp;
+		url=https%3A%2F%2Flegiaodosherois.uol.com.br%2F2018%2Fone-piece-novo-vilao-do-arco-do-manga-se-chama-batman.html&amp;psig=AOvVaw1L_3s_0D01Rquag6w_hb1"
+		+ "1&amp;ust=1540398886125178">
+		<img class="irc_mi" src="https://kanto.legiaodosherois.com.br/w750-h393-gnw-cfill-q80/wp-content/uploads/2018/08/legiao_hGqnzdI41NOksoAcejtKim0v"
+				+ "wZWaPV_guxJ7UFLX56.jpg.jpeg" alt="Resultado de imagem para one piece" onload="typeof "
+						+ "google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" 
+width="499" height="261" style="margin-top: 97px;"></a></div>
+
+<img class="irc_mi" 
+src="https://kanto.legiaodosherois.com.br/w750-h393-gnw-cfill-q80/wp-content/uploads/2018/08/
+legiao_hGqnzdI41NOksoAcejtKim0vwZWaPV_guxJ7UFLX56.jpg.jpeg" alt="Resultado de imagem para one piece" 
+onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" 
+width="499" height="261" style="margin-top: 97px;">
+*/

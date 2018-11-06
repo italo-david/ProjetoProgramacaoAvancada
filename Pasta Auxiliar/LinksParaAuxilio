@@ -1,0 +1,39 @@
+https://developer.android.com/studio/projects/android-library?hl=pt-br
+
+Download arquivos
+https://dicasdejava.com.br/java-como-fazer-download-de-um-arquivo/
+
+Armazenar imagem
+https://receitasdecodigo.com.br/java/como-salvar-uma-imagem-em-arquivo-usando-imageio-do-java
+
+Reproduzir audio
+http://clubedosgeeks.com.br/programacao/java/reproduzindo-arquivo-mp3-em-sua-aplicacao-java
+http://www.byiorio.com/wordpress/2011/12/20/codigo-simples-para-tocar-um-mp3-no-android/#sthash.Fm3v7WYa.dpbs
+
+Armazenar Arquivos
+https://developer.android.com/guide/topics/data/data-storage?hl=pt-br
+https://www.androidpro.com.br/blog/armazenamento-de-dados/armazenar-dados-de-aplicativos-localmente/
+https://pt.stackoverflow.com/questions/48196/salvamento-de-dados-em-android
+
+Connection Pool
+https://www.devmedia.com.br/connection-pool/5869
+https://www.devmedia.com.br/guia/hibernate/38312
+https://www.devmedia.com.br/injetando-dados-de-requisicoes-http-em-metodos-java-usando-jax-rs/27448
+
+Entendendo Classes abstratas para conexão
+https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html
+
+JSON paraAPI
+https://www.devmedia.com.br/json-tutorial/25275
+https://github.com/stleary/JSON-java
+
+API
+https://github.com/stleary/JSON-java
+https://jonsuh.com/blog/jquery-ajax-call-to-php-script-with-json-return/
+
+
+https://pt.stackoverflow.com/questions/221243/estrutura-de-pastas-do-android
+
+Ler url
+https://www.blogson.com.br/como-ler-parametros-da-url-com-javascript/
+Object valor = FacesContext.getCurrentInstance().getExternalContext().getRequestMap() .get("src");
