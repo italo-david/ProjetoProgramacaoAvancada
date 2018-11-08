@@ -1,10 +1,13 @@
 package httpDownload;
 
+import java.net.URLConnection;
+
 public class Conexao {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	private URLConnection conection; //Classe para fazer as conexões
+	
+	public Conexao() {
+		
 	}
 
 }
